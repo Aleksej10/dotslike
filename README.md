@@ -14,7 +14,7 @@ Strahinja Ivanovic, Darko Veizovic
 
 Igra koja ce biti opisana je slabo poznata, cak je i njeno ime nepoznanica na celom
 internetu (do druge strane google pretrage), pa ce se u nastavku na nju referisati
-kao na igru "Dots" (iako bi pogodnije ime verovatno bilo LINES)
+kao na igru "Dots" (iako bi pogodnije ime verovatno bilo LINES).
 
 Tabla ove igre podseca na znak KARO u kartama. Sastoji se od 57 kvadrata koji mogu
 biti oznaceni kao 'x' ili 'o'. Svaki kvadrat formiraju 4 linije, a cela tabla ih
@@ -57,7 +57,7 @@ gde je jedna strana verovatno potpuno dominirana drugom.
 Kao funkcija evaluacije svakog od listova (ili pseudo listova) koristi
 se obicna razlika izmedju obelezenih polja. Konacna evaluacija dobija se
 minmax pretragom, gde u svakom nivou uzimamo maximum ili miminum u zavisnosi od
-strane na potezu u tom nivou (pozitivne vrednosti su dobre za 'x', negativne za 'o')
+strane na potezu u tom nivou (pozitivne vrednosti su dobre za 'x', negativne za 'o').
 
 Ni jedna od opisanih tehnika se ne koristi u ovom programu, iako bi neko od njih
 verovatno dovele do boljih performansi. Bez obzira na to, program je fokusiran
@@ -135,4 +135,4 @@ Veliki deo ideja uzet je iz [AlphaZero](http://deepmind.com/blog/alphazero-shedd
 kompanija [DeepMind](http://deepmind.com).
 Takodje, kao smernica je posluzio [Lc0](https://lczero.org) a pomoc u
 shvatanju pojedinjenih koncepata je dobijena od strane dobrih ljudi sa
-[leela chess zero discord ceta](https://discord.gg/pKujYxD)
+[leela chess zero discord ceta](https://discord.gg/pKujYxD).
