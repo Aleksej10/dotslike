@@ -3,6 +3,12 @@
 
   ![](https://66.media.tumblr.com/71b8a593e9983a0e239a54c3c100ec10/tumblr_plho482o8s1y4q5m3o1_640.png)
   
+# Dependencies
+
+ - numpy
+ - keras
+ - tensor-flow
+  
 # Run
 Game is fully implemented in ***python***:
 
