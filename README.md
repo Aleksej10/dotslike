@@ -16,7 +16,7 @@ Game is fully implemented in ***python***:
 $ git clone https://github.com/Aleksej10/dotslike.git
 ```
  ```
-$ python3 pro.py
+$ python3 play.py
 ```
 
 
