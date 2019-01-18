@@ -23,7 +23,8 @@ $ git clone https://github.com/Aleksej10/dotslike.git
  ```
 $ python3 play.py
 ```
-
+## How to play
+At every turn you choose one of unmarked lines on the board by entering line number (see ***lineNumbers.png***). Making square brings you 1 point.
 
 ##  Authors
 * Strahinja Ivanović |  GitHub &bull; [Aleksej10](https://github.com/Aleksej10)  
