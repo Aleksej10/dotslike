@@ -24,7 +24,10 @@ $ git clone https://github.com/Aleksej10/dotslike.git
 $ python3 play.py
 ```
 ## How to play
-At every turn you choose one of unmarked lines on the board by entering line number (see ***lineNumbers.png***). Making square brings you 1 point.
+You start a game by picking side, ***1*** or ***-1*** (1 plays first).
+On your turn you choose one of the unmarked lines on the board by entering line number (see ***lineNumbers.png***).
+With lack of GUI the only way to play it is to have a board written down in front of you.
+
 
 ##  Authors
 * Strahinja Ivanović |  GitHub &bull; [Aleksej10](https://github.com/Aleksej10)  
