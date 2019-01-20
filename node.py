@@ -16,7 +16,7 @@ class Node():
         model.add(Dense(50, input_dim=100, activation='tanh'))
         model.add(Dense(20, activation='tanh'))
         model.add(Dense(1, activation='tanh'))  #output layer represents probability for winning, from -1 to 1
-        model.compile(loss='mse', optimizer='rmsprop')
+        model.compile(loss='mse', optimizer='sgd')
         model.save('model')
 
     #training data
@@ -57,8 +57,8 @@ class Node():
 
     def usb1(self):                     #how you pick which path to pay a visit
         if self.visits == 0:            #state of art balance between exploration and exploitation
-            return -inf * self.b.side
-        return (f64(self.score)/self.visits) - self.b.side*e*sqrt(2 * f64(log(self.father.visits))/self.visits)
+            return inf * self.father.b.side
+        return (f64(self.score)/self.visits) + self.father.b.side*e*sqrt(2 * f64(log(self.father.visits))/self.visits)
 
     def backprop(self, score, done): #completely intuitive process of backpropagation
         self.score += score
