@@ -13,24 +13,24 @@ root  = Node(Board(0,0,1),None)
 
 while not root.b.done():
     if root.b.side == sdie:
-        root.mcts(1000)
+        root.mcts(500)
         n = int(input('your turn: '))
         root = root.sons[root.player_chose(lines[n])]
-        root.b.printLines()
+        del(root.father)
+        root.father = None
+        print('estimate: ', end='')
+        print(root.estimate)
     else:
-        root.mcts(1000)
+        root.mcts(10000)
         lll = root.b.linije
         root = root.sons[root.chose()]
+        del(root.father)
+        root.father = None
         lll ^= root.b.linije
-        root.b.printLines()
         print('played: ', end='')
         print(lines.index(lll), end='  ')
         print('estimate: ', end='')
         print(root.estimate, end='  ')
         print('looked at: ', end='')
         print(root.visits)
-
-game_eval = root.true_eval
-root.fitModel(game_eval, game_eval)
-Node.model.save('model')
 
